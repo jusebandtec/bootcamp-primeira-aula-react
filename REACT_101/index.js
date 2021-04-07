@@ -21,7 +21,6 @@ function Contador(props) {
     return (
         <React.Fragment>
             <h1>{props.titulo}</h1>
-            <img src={props.img}></img>
             <h2>{numero}</h2>
             <button onClick={somar}>+</button>
             <button onClick={subtrair}>-</button>
@@ -32,10 +31,10 @@ function Contador(props) {
 function App(props) {
     return (
         <React.Fragment>
-            <h1>Vote no melhor piloto deste final de semana</h1>
-            <Contador titulo="Max Verstappen" img="./img/verstappen.jpg"/>
-            <Contador titulo="Charles Leclerc" img="./img/leclerc.jpg"/>
-            <Contador titulo="Lewis Hamilton" img="./img/lewis.jpg"/>
+            <h1>Vote no seu preferido</h1>
+            <Contador titulo="React" />
+            <Contador titulo="Angular" />
+            <Contador titulo="VueJS" />
         </React.Fragment>
     );
 }
